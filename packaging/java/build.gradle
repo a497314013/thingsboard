@@ -19,6 +19,13 @@ plugins {
     id "nebula.ospackage" version "8.6.3"
 }
 
+repositories {
+    mavenCentral()
+    jcenter() // 如果你使用的是旧版本的 Gradle，可能需要 jcenter 仓库
+    maven { url 'https://plugins.gradle.org/m2/' } // 官方插件仓库
+}
+
+
 buildDir = projectBuildDir
 version = projectVersion
 distsDirName = "./"

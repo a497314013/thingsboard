@@ -244,7 +244,7 @@ public class DefaultTbRuleChainService extends AbstractTbEntityService implement
         RuleChainId ruleChainMetaDataId = ruleChainMetaData.getRuleChainId();
         try {
             RuleChainUpdateResult result = ruleChainService.saveRuleChainMetaData(tenantId, ruleChainMetaData, this::updateRuleNodeConfiguration);
-            checkNotNull(result.isSuccess() ? true : null);
+            checkNotNull(result.isSuccess() ? (Boolean)true : null);
 
             List<RuleChain> updatedRuleChains;
             if (updateRelated && result.isSuccess()) {

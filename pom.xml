@@ -742,6 +742,7 @@
                     </configuration>
                     <executions>
                         <execution>
+                            <phase>generate-sources</phase>
                             <goals>
                                 <goal>compile</goal>
                                 <goal>compile-custom</goal>
@@ -2311,11 +2312,11 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        <repository>
+        <!-- <repository>
             <id>typesafe</id>
             <name>Typesafe Repository</name>
             <url>https://repo.typesafe.com/typesafe/releases/</url>
-        </repository>
+        </repository> -->
         <repository>
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public</url>
